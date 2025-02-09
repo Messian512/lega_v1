@@ -1,0 +1,28 @@
+/* Устанавливаем фон для всего сайта */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Делаем изображения адаптивными */
+img {
+  width: 30%;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+/* Для header */
+header {
+  background-color: #007bff;
+}
+
+/* Для footer */
+footer {
+  background-color: #343a40;
+}
+
+/* Делаем основное изображение с надписью более отступов */
+main img {
+  margin-top: 20px;
+}
