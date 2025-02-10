@@ -7,28 +7,34 @@ body {
   background-color: #f8f9fa;
   /* flex: auto; */
   border: #007bff 3px solid;
-  height: 100vh;
+  height: 100dvh;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 img {
   /* width: 100%; */
   max-width: 100%;
-  height: auto;
-  max-height: 50vh; /* Не превышает высоту экрана */
+  /* height: auto; */
+  max-height: 30vh; /* Не превышает высоту экрана */
   object-fit: contain; /* Масштабирование без обрезки */
   /* border: #007bff 1px solid; */
 }
 
 .imageLink {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
+  /* height: 100%; */
+  /* width: 50%; */
 
 }
 
 h1 {
+  font-weight: bold;
+}
+main p {
+  /* font-size: 2em; */
   font-weight: bold;
 }
 
