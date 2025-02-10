@@ -7,12 +7,14 @@ body {
   background-color: #f8f9fa;
   /* flex: auto; */
   border: #007bff 3px solid;
-  height: 100dvh;
+  /* height: 100dvh; */
+  height: 100%;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
+  border: #DF0E0E 4px solid;
 }
 img {
   /* width: 100%; */
