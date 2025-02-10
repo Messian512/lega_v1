@@ -2,60 +2,71 @@
   background-color: #2E5A8A !important;
 }
 
-body {
+
+html body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
-  /* flex: auto; */
-  border: #007bff 3px solid;
-  /* height: 100dvh; */
   height: 100%;
+  
+  /* border: #007bff 3px solid; */
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100dvh;
-  border: #DF0E0E 4px solid;
+  /* border: #DF0E0E 4px solid; */
 }
 img {
-  /* width: 100%; */
   max-width: 100%;
-  /* height: auto; */
-  max-height: 30vh; /* Не превышает высоту экрана */
-  object-fit: contain; /* Масштабирование без обрезки */
+  max-height: 30vh;
+  object-fit: contain;
+  /* border: #007bff 1px solid; */
+}
+
+.imageLinkWrapper {
+  /* display: flex; */
+  /* flex: 1; */
+  /* flex-grow: 1; */
+  justify-content: center;
   /* border: #007bff 1px solid; */
 }
 
 .imageLink {
+  /* width: 200%; */
+  height: 10vh;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
-  /* height: 100%; */
-  /* width: 50%; */
-
 }
 
 h1 {
   font-weight: bold;
 }
-main p {
-  /* font-size: 2em; */
-  font-weight: bold;
+
+p {
+  margin: 0;
 }
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2vh;
+  /* margin-top: 20px; */
+  /* border: red 1px solid; */
+}
+main p {
+  @media (min-width: 992px) {font-size: 200%};
+  font-weight: bold;
+  /* border: #007bff 1px solid; */
+}
+
 
 header {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
-  background-color: #007bff;
+  /* background-color: #007bff; */
 }
 
-main {
-  flex: 1;
 
-  margin-top: 20px;
-  /* border: #007bff 1px solid; */
-}
 
 footer {
   background-color: #343a40;
 }
 
-/* main img {
-  margin-top: 20px;
-} */
