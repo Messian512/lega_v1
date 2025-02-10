@@ -1,28 +1,53 @@
-/* Устанавливаем фон для всего сайта */
+.bg-primary {
+  background-color: #2E5A8A !important;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
+  /* flex: auto; */
+  border: #007bff 3px solid;
+  height: 100vh;
 }
-
-/* Делаем изображения адаптивными */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 img {
-  width: 30%;
+  /* width: 100%; */
   max-width: 100%;
   height: auto;
-  
+  max-height: 50vh; /* Не превышает высоту экрана */
+  object-fit: contain; /* Масштабирование без обрезки */
+  /* border: #007bff 1px solid; */
 }
 
-/* Для header */
+.imageLink {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
+
+}
+
+h1 {
+  font-weight: bold;
+}
+
 header {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
   background-color: #007bff;
 }
 
-/* Для footer */
+main {
+  flex: 1;
+
+  margin-top: 20px;
+  /* border: #007bff 1px solid; */
+}
+
 footer {
   background-color: #343a40;
 }
 
-/* Делаем основное изображение с надписью более отступов */
-main img {
+/* main img {
   margin-top: 20px;
-}
+} */
